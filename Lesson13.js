@@ -38,8 +38,10 @@ gs.info(message);
 var level = 5;
 var message = "";
 
-switch (level) {
-  case 0:
+switch (
+  level // accepts int or string only
+) {
+  case 0: // type must match above
     message = "Empty";
     break;
 

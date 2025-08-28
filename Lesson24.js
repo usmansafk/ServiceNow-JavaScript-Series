@@ -3,6 +3,7 @@
 //
 var list = ["Chuck", "Kreg", "Stacey"];
 gs.info("list=" + list);
+gs.info("list=" + list.toString()); // makes certain it is string
 
 //
 // L24S02 - join(string)
@@ -10,17 +11,17 @@ gs.info("list=" + list);
 var list2 = ["Chuck", "Kreg", "Stacey"];
 gs.info("join: list=" + list2.join(", "));
 
-// push(value1, value2, ..., valueX)
+// push(value1, value2, ..., valueX) - add to end
 list2.push("Dave");
 list2.push("Andrew");
 gs.info("push: list=" + list2.join(", "));
 
-// pop()
+// pop() - remove from end
 list2.pop();
 gs.info("pop: list=" + list2.join(", "));
 
 //
-// L24S03 - shift()
+// L24S03 - shift() - remove from first element
 //
 var list3 = ["Chuck", "Kreg", "Stacey"];
 gs.info("Before shift(), list[0]=" + list3[0]);
@@ -29,7 +30,7 @@ gs.info("shift: list=" + list3.join(", "));
 gs.info("After shift(), list[0]=" + list3[0]);
 
 //
-// L24S04 - unshift
+// L24S04 - unshift - add to first element
 //
 var list4 = ["Chuck", "Kreg", "Stacey"];
 var newLength = list4.unshift("Jason", "Andrew");
@@ -67,7 +68,7 @@ incGr.addQuery("priority", "1");
 incGr.query();
 
 while (incGr.next()) {
-  list5.push(incGr.getValue("sys_id"));
+  list5.push(incGr.getValue("sys_id")); // make sure use getter
 }
 
 gs.info("list=\n" + list5.join("\n"));

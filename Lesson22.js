@@ -1,9 +1,8 @@
 //
 // L22S01 - Arrays
-//
+// Complex data type - an array data type is used to store multiple inputs of same type
 
 // Make a simple array
-//
 // Optional declaration, but not preferred:
 // var list = Array(); .. rarely used
 var list = [];

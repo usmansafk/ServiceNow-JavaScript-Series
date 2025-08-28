@@ -3,7 +3,7 @@
 //
 var list = [1, 3, 5];
 
-list.forEach(myFunction);
+list.forEach(myFunction); // built in loop instead of writing your own loop - for each element in the list do x
 
 function myFunction(item) {
   gs.info("myFunction item=" + item);
@@ -24,5 +24,6 @@ list2.forEach(function (item) {
 var list3 = ["apple", "banana", "orange"];
 
 list3.forEach(function (item, index, arr) {
+  // 3 params are accepted
   gs.info("embedded function item=" + item + " index=" + index + " arr=" + arr);
 });

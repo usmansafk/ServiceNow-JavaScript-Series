@@ -21,7 +21,7 @@ function getRecordDisplayValue(tableName, limit) {
   while (tableGR.next()) {
     var obj = {};
     obj["display_value"] = tableGR.getDisplayValue();
-    obj["sys_id"] = tableGR.getValue("sys_id");
+    obj["sys_id"] = tableGR.getValue("sys_id"); // or use: recGr.getUniqueValue();
     list.push(obj);
   }
 

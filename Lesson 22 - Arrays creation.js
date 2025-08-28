@@ -1,5 +1,5 @@
 //
-// L22S01 - Arrays
+// L22S01 - Arrays Intro - how to create...
 // Complex data type - an array data type is used to store multiple inputs of same type
 
 // Make a simple array

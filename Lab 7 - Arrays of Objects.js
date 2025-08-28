@@ -30,3 +30,22 @@ function getRecordDisplayValue(tableName, limit) {
 
 var output = getRecordDisplayValue("incident", 3);
 gs.info(JSON.stringify(output, null, 4));
+
+/*
+Output:
+*** Script: [
+    {
+        "display_value": "INC0000060",
+        "sys_id": "1c741bd70b2322007518478d83673af3"
+    },
+    {
+        "display_value": "INC0009002",
+        "sys_id": "1c832706732023002728660c4cf6a7b9"
+    },
+    {
+        "display_value": "INC0000009",
+        "sys_id": "46b66a40a9fe198101f243dfbc79033d"
+    }
+]
+
+*/

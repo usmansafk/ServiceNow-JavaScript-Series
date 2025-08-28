@@ -1,7 +1,8 @@
 //
 // L26S01 - Simple Objects
 //
-var box = {};
+// - Dot Notation
+var box = {}; // var box = new Object();
 box.height = 20;
 box.width = 10;
 box.length = 10;
@@ -19,7 +20,7 @@ vehicle["model"] = "Sienna";
 gs.info(vehicle["year"] + " " + vehicle["make"] + " " + vehicle["model"]);
 
 //
-// L26S03 - Shortcut - note the double quotes
+// L26S03 - JSON / Shortcut intiliaze and set same time - note the double quotes
 //
 var vehicle = {
   year: 2018,
